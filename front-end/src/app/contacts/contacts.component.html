@@ -1,0 +1,7 @@
+<div class="example-button-row">
+    <button mat-raised-button color="primary" routerLink="/home">Home</button>
+    <button mat-raised-button color="primary" routerLink="/contacts">Contacts</button>
+    <button mat-stroked-button color="warn" style="float: right;" (click)="logout()">Logout</button>
+    <p style="float: right;">Hello {{currentUser.name}}  `</p>
+</div>
+<router-outlet></router-outlet>

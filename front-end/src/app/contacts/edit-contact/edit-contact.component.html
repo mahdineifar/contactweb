@@ -1,0 +1,25 @@
+<h4>Update contact</h4>
+<form [formGroup]="addForm" (ngSubmit)="update()" class="example-form">
+
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Nom" formControlName="nom" name="nom">
+  </mat-form-field>
+  
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Prenom" formControlName="prenom" name="prenom">
+  </mat-form-field>
+  
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Date de naissance" formControlName="dateNaissance" name="dateNaissance">
+  </mat-form-field>
+  
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Email" formControlName="email" name="email">
+  </mat-form-field>
+  
+  <mat-form-field class="example-full-width">
+    <input matInput placeholder="Telephone" formControlName="tel" name="tel">
+  </mat-form-field>
+
+  <button mat-raised-button color="primary">Update</button>
+</form>
